@@ -11,7 +11,10 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         // Set up the player transform reference
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        if(GameObject.FindGameObjectWithTag("Player").transform != null){
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+        
     }
 
     void Update()
