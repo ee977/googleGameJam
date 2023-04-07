@@ -52,7 +52,7 @@ public class enemyAI : MonoBehaviour
             PlayerHealth playerHealth = target.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage);
+                //playerHealth.TakeDamage(damage);
             }
         }
 

@@ -38,10 +38,10 @@ public class attackandcombat : MonoBehaviour
         {
             if (hit.CompareTag("Enemy"))
             {
-                EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
-                if (enemyHealth != null)
+                //EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
+                //if (enemyHealth != null)
                 {
-                    enemyHealth.TakeDamage(damage);
+                    //enemyHealth.TakeDamage(damage);
                 }
             }
         }
