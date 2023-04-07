@@ -5,42 +5,47 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // Set up variables for player health
-    public int maxHealth = 100;
-    public int currentHealth;
-    public Text healthText;
+    [SerializeField] private float health = 100;
 
-    void Start()
-    {
-        // Set up the player's starting health
-        currentHealth = maxHealth;
-        UpdateHealthText();
+    private int MAX_HEALTH = 100;
+   
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.D)){
+            Damage(10);
+        }
+        if (Input.GetKeyDown(KeyCode.H)){
+            Heal(10);
+        }
     }
 
-    public void TakeDamage(int damageAmount = 10)
-    {
-        // Reduce the player's health by the specified amount
-        currentHealth -= damageAmount;
+    public void Damage(float amount){
+        if(amount < 0){
+            throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
+        }
 
-        // Update the health UI text
-        UpdateHealthText();
+        this.health -= amount;
 
-        // Check if the player is dead
-        if (currentHealth <= 0)
-        {
+        if(health <= 0){
             Die();
         }
     }
 
-    void Die()
-    {
-        // Handle the player's death (e.g. respawn, game over screen, etc.)
-        Debug.Log("Player has died!");
+    public void Heal(int amount){
+        if (amount < 0){
+            throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
+        }
+
+        bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
+
+        if (wouldBeOverMaxHealth){
+            this.health = MAX_HEALTH;
+        }else{
+            this.health += amount;
+        }
     }
 
-    void UpdateHealthText()
-    {
-        // Update the health UI text
-        healthText.text = "Health: " + currentHealth.ToString();
+    private void Die(){
+        Debug.Log("I am Dead!");
+        Destroy(gameObject);
     }
 }

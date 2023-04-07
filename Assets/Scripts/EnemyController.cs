@@ -5,16 +5,18 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     // Set up variables for enemy movement and behavior
-    public float speed = 3.0f;
-    public Transform player;
+    [SerializeField]
+    private float speed = 3.0f;
+    [SerializeField]
+    private Transform player;
+    [SerializeField]
+    private float damage = 20.0f;
 
     void Start()
     {
         // Set up the player transform reference
-        if(GameObject.FindGameObjectWithTag("Player").transform != null){
-            player = GameObject.FindGameObjectWithTag("Player").transform;
-        }
-        
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+                
     }
 
     void Update()
@@ -28,7 +30,7 @@ public class EnemyController : MonoBehaviour
         // If the enemy collides with the player, apply damage
         if (other.tag == "Player")
         {
-            other.GetComponent<PlayerHealth>().TakeDamage();
+            other.GetComponent<PlayerHealth>().Damage(damage);
         }
     }
 }
