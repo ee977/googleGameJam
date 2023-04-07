@@ -8,4 +8,8 @@ public class StartMenu : MonoBehaviour
     public void LoadGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);  
     }
+
+    public void EndGame() {
+        Application.Quit();      
+    }
 }
