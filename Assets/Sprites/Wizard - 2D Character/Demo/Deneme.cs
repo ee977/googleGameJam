@@ -36,17 +36,18 @@ namespace ClearSky
         void Run()
         {
             Vector3 moveVelocity = Vector3.zero;
+            Vector3 moveVelo = Vector3.zero;
             anim.SetBool("isRun", false);
 
             if (Input.GetAxisRaw("Vertical") < 0)
             {
-                moveVelocity = Vector3.down;
+                moveVelo = Vector3.down;
                 anim.SetBool("isRun", true);
             }
             
             if (Input.GetAxisRaw("Vertical") > 0)
             {
-                moveVelocity = Vector3.up;
+                moveVelo = Vector3.up;
                 anim.SetBool("isRun", true);
             }
 
@@ -68,7 +69,7 @@ namespace ClearSky
                 anim.SetBool("isRun", true);
 
             }
-           transform.position += moveVelocity * movePower * Time.deltaTime;
+           transform.position += (moveVelocity + moveVelo) * movePower * Time.deltaTime;
         }
      
         void Attack()
@@ -84,9 +85,9 @@ namespace ClearSky
             {
                 anim.SetTrigger("hurt");
                 if (direction == 1)
-                    rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
+                    rb.AddForce(new Vector2(-0.4f, 0.1f), ForceMode2D.Impulse);
                 else
-                    rb.AddForce(new Vector2(5f, 1f), ForceMode2D.Impulse);
+                    rb.AddForce(new Vector2(0.4f, 0.1f), ForceMode2D.Impulse);
             }
         }
         void Die()

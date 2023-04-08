@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ff71863-773b-404b-a58b-02880c167321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charactercontroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/charactercontroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Pixel Art Top Down - Basic/Animation/AC Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Pixel Art Top Down - Basic/Animation/AC Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Animations/Wizard Demo.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Animations/Wizard Demo.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Demo/WizDemo1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Demo/WizDemo1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Demo/Wizard Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Demo/Wizard Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Demo/Deneme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Wizard - 2D Character/Demo/Deneme.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
       <updated>1680900031683</updated>
       <workItem from="1680900037953" duration="1419000" />
       <workItem from="1680901780712" duration="2560000" />
-      <workItem from="1680944050438" duration="4840000" />
+      <workItem from="1680944050438" duration="5461000" />
     </task>
     <servers />
   </component>
