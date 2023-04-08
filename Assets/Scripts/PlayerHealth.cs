@@ -53,7 +53,8 @@ using ClearSky;
             }
         }
 
-        private void Die(){
+        private void Die()
+        {
             Debug.Log("I am Dead!");
             anim.SetTrigger("die");
         }
