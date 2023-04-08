@@ -19,9 +19,6 @@ using ClearSky;
         }
    
         void Update(){
-            if (Input.GetKeyDown(KeyCode.Mouse0)){
-                Damage(10);
-            }
             if (Input.GetKeyDown(KeyCode.H)){
                 Heal(10);
             }

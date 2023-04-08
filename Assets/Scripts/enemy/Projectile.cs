@@ -9,7 +9,9 @@ public class Projectile : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
-    
+
+    [SerializeField]
+    private float dmg = 10;
     
     // Start is called before the first frame update
     void Start()
@@ -22,5 +24,15 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        // If the enemy collides with the player, apply damage
+        if (other.tag == "Player"){
+            other.GetComponent<PlayerHealth>().Damage(dmg);
+        }
+
+        Destroy(gameObject);
     }
 }
