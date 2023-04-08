@@ -17,7 +17,7 @@ public class charactercontroller : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Move the player based on input
         float moveHorizontal = Input.GetAxis("Horizontal");
