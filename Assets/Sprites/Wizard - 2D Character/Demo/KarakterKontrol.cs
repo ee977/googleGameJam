@@ -4,7 +4,7 @@ namespace ClearSky
 {
     public class KarakterKontrol : MonoBehaviour
     {
-        [SerializeField]public float movePower = 10f;
+        [SerializeField]public float movePower = 3f;
 
         private Rigidbody2D rb;
         private Animator anim;
@@ -77,6 +77,7 @@ namespace ClearSky
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 anim.SetTrigger("attack");
+                transform.position = transform.localPosition;
             }
         }
         void Hurt()
