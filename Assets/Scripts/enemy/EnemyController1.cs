@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class EnemyController1 : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class EnemyController1 : MonoBehaviour
     Rigidbody2D rb2D;
     Collider2D c2d;
     private Animator anim;
+    private SpriteRenderer _spriteRenderer;
 
     void Start(){
 
