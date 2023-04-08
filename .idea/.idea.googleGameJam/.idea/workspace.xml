@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ff71863-773b-404b-a58b-02880c167321" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/New Animation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/New Animation.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Stage.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Stage.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +81,7 @@
       <workItem from="1680978913205" duration="27000" />
       <workItem from="1680979023385" duration="10000" />
       <workItem from="1680979077621" duration="3000" />
+      <workItem from="1680979172419" duration="8000" />
     </task>
     <servers />
   </component>
