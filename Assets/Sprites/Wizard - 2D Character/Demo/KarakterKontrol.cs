@@ -77,7 +77,6 @@ namespace ClearSky
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 anim.SetTrigger("attack");
-                transform.position = transform.localPosition;
             }
         }
         void Hurt()
