@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ff71863-773b-404b-a58b-02880c167321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Monsters Creatures Fantasy/Animations/Goblin/Run_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Monsters Creatures Fantasy/Animations/Goblin/Run_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/New Animation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/New Animation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Stage.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Stage.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +16,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,7 +41,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Unity\2021.3.15f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\kdrfr\Desktop\GameJam\googleGameJam -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\kdrfr\Desktop\GameJam\googleGameJam" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -85,6 +80,10 @@
       <workItem from="1680900037953" duration="1419000" />
       <workItem from="1680901780712" duration="2560000" />
       <workItem from="1680944050438" duration="15243000" />
+      <workItem from="1680978279766" duration="615000" />
+      <workItem from="1680978913205" duration="27000" />
+      <workItem from="1680979023385" duration="10000" />
+      <workItem from="1680979077621" duration="3000" />
     </task>
     <servers />
   </component>
