@@ -15,12 +15,14 @@ public class EnemyController : MonoBehaviour
     private float damage = 5.0f;
 
     private Animator anim;
+    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
         // Set up the player transform reference
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -28,6 +30,14 @@ public class EnemyController : MonoBehaviour
     {
         // Move the enemy towards the player
         transform.position = Vector2.MoveTowards(transform.position , player.position, speed * Time.deltaTime);
+        if (player.position.x - transform.position.x < 0)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else
+        {
+            _spriteRenderer.flipX = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
