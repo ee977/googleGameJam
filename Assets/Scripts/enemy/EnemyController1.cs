@@ -16,6 +16,7 @@ public class EnemyController1 : MonoBehaviour
     
     Rigidbody2D rb2D;
     Collider2D c2d;
+    private Animator anim;
 
     void Start(){
 
@@ -43,6 +44,11 @@ public class EnemyController1 : MonoBehaviour
 
 
            rb2D.AddForce(-direction * thrust, ForceMode2D.Impulse);
+           anim.SetTrigger("attack");
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        anim.SetBool("Player", false);
     }
 }
