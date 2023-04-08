@@ -39,5 +39,15 @@ public class Shooting : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         AudioSource.PlayClipAtPoint(shootSound, transform.position);
+
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mousePosition - (Vector2)transform.position).normalized;
+        Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
+        bulletRB.velocity = direction * 10f;
+
+        // Ignore collisions with ground or other objects
+        Physics2D.IgnoreLayerCollision(bullet.layer, LayerMask.NameToLayer("Ground"), true);
+        Physics2D.IgnoreLayerCollision(bullet.layer, LayerMask.NameToLayer("Default"), true);
     }
+
 }
