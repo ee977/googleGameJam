@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         // Move the enemy towards the player
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position , player.position, speed * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D other)
