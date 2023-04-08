@@ -19,7 +19,6 @@ namespace ClearSky
         {
             anim.SetBool("isLookUp", false);
             anim.SetBool("isRun", false);
-            anim.SetBool("isJump", false);
         }
         public void Idle()
         {
@@ -57,11 +56,6 @@ namespace ClearSky
             anim.SetBool("isRun", true);
 
         }
-        public void Jump()
-        {
-            ResetAnimation();
-            anim.SetBool("isJump", true);
-
-        }
+       
     }
 }

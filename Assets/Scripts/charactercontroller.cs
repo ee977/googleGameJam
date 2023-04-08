@@ -8,11 +8,13 @@ public class charactercontroller : MonoBehaviour
     public float speed = 6.0f;
 
     private Rigidbody2D rb;
+    private Animator anim;
 
     void Start()
     {
         // Set up the Rigidbody2D component
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
