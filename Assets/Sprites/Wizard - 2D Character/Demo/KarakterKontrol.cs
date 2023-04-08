@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ClearSky
 {
-    public class Deneme : MonoBehaviour
+    public class KarakterKontrol : MonoBehaviour
     {
         [SerializeField]public float movePower = 10f;
 
