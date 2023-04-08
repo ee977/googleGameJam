@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8930619786505585469}
   - component: {fileID: 8930619786505585468}
+  - component: {fileID: 214757629}
   m_Layer: 0
   m_Name: Shooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8930619786505585469
 Transform:
   m_ObjectHideFlags: 0
@@ -46,13 +47,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15abb62e690b456448705d6840775c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   stopDistance: 12
   nearDistance: 5
   shotTime: 2
   firerate: 2
   shot: {fileID: 6760571476254535538, guid: a8391f6f5c6addc46b41214e9803f1e4, type: 3}
   shootingPoint: {fileID: 8930619788055861226}
+--- !u!95 &214757629
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8930619786505585471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ec739504e4ed6b4c9e05ab30e1f7c35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8930619786655910125
 GameObject:
   m_ObjectHideFlags: 0
