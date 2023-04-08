@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6ff71863-773b-404b-a58b-02880c167321" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.googleGameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Monsters Creatures Fantasy/Animations/Goblin/Run_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Monsters Creatures Fantasy/Animations/Goblin/Run_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemy/EnemyController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +15,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,7 +78,9 @@
       <updated>1680900031683</updated>
       <workItem from="1680900037953" duration="1419000" />
       <workItem from="1680901780712" duration="2560000" />
-      <workItem from="1680944050438" duration="15243000" />
+      <workItem from="1680944050438" duration="15537000" />
+      <workItem from="1680968846875" duration="21000" />
+      <workItem from="1680979373691" duration="174000" />
     </task>
     <servers />
   </component>

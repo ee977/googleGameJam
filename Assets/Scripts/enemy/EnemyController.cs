@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController1 : MonoBehaviour
 {
     // Set up variables for enemy movement and behavior
     [SerializeField]
