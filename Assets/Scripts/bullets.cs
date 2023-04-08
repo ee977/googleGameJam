@@ -5,7 +5,8 @@ using UnityEngine;
 public class bullets : MonoBehaviour
 {
     
-    public GameObject hitEffect;
+    [SerializeField]public GameObject hitEffect;
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
