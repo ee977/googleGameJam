@@ -65,7 +65,7 @@ public class ShootingEnemyController : MonoBehaviour
         {
             health -= damage;
         }
-        if (health <= 0)
+        if (health <= 0 && ded == false)
         {
             print("DEDPLS");
             ded = true;
