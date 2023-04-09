@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4226776817313029374}
   - component: {fileID: 1825420066671930318}
   - component: {fileID: 949105524}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_Flyingeye
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2356490580556160714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
