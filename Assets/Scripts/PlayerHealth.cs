@@ -4,23 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using ClearSky;
 using TMPro;
+using Unity.VisualScripting;
+using Input = UnityEngine.Windows.Input;
 
 
-
-
-    public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
         {
             [SerializeField] private float health = 100;
             private Animator anim;
             [SerializeField]private TMP_Text text;
-            
+            public KarakterKontrol karakterKontrol;
+
             private int MAX_HEALTH = 100;
             
             void Awake()
             {
                 anim = GetComponent<Animator>();
                 text.text = "" + health;
-                
             }
        
             void Update()
@@ -39,6 +39,8 @@ using TMPro;
                 if(health <= 0){
                     Die();
                     text.text = "0";
+                    karakterKontrol.enabled = false;
+                    gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
                 }
             }
     
