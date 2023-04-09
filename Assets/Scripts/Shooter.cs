@@ -25,9 +25,10 @@ public class Shooter : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Vector2 shootDirection = (mousePosition - firePoint.position).normalized;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        
+        rb.gravityScale = 0f; // Set gravity scale to zero
+        rb.AddForce(shootDirection * bulletForce, ForceMode2D.Impulse);
     }
     
 }

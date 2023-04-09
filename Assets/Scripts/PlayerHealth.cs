@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
             [SerializeField] private float health = 100;
             private Animator anim;
             [SerializeField]private TMP_Text text;
+            [SerializeField] private GameObject canvas;
             public KarakterKontrol karakterKontrol;
 
             private int MAX_HEALTH = 100;
@@ -43,13 +44,15 @@ public class PlayerHealth : MonoBehaviour
                     karakterKontrol.enabled = false;
                     gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
                     Invoke(nameof(stopAnim), 1.5f);
-                    
+
                 }
             }
 
             void stopAnim()
             {
                 anim.enabled = false;
+                canvas.SetActive(true);
+                Time.timeScale = 0;
             }
     
            // public void Heal(int amount){
