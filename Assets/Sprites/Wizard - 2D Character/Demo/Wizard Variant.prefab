@@ -512,22 +512,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9493611, y: 1.3596563}
   m_EdgeRadius: 0
---- !u!70 &794697842
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853461538655865705}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.02330935, y: 0.65068436}
-  m_Size: {x: 0.4908979, y: 1.2938452}
-  m_Direction: 0
 --- !u!212 &1988881200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -619,6 +603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   text: {fileID: 0}
+  canvas: {fileID: 0}
   karakterKontrol: {fileID: 1988881199}
 --- !u!114 &1988881223
 MonoBehaviour:

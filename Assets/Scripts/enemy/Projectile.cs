@@ -35,6 +35,16 @@ public class Projectile : MonoBehaviour
         //transform.Rotate(0,0,Mathf.Tan(Mathf.Abs (player.position.y - transform.position.y)/Mathf.Abs( player.position.x - transform.position.x)));
     }
     
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        // If the enemy collides with the player, apply damage
+        if (other.tag == "Player")
+        {
+            other.GetComponent<PlayerHealth>().Damage(dmg);
+            
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "eye")
