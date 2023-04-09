@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class bullets : MonoBehaviour
+
 {
     
     [SerializeField]public GameObject hitEffect;
@@ -17,5 +18,6 @@ public class bullets : MonoBehaviour
         }
         
     }
+    
 }
 
