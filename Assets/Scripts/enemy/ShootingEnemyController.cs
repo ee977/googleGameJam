@@ -69,6 +69,7 @@ public class ShootingEnemyController : MonoBehaviour
         {
             print("DEDPLS");
             ded = true;
+            scoreboard.GetComponent<Score>().addScore(1);
             anim.SetBool("Dead", true);
             gameObject.GetComponent<EnemyController>().enabled = false;
             StartCoroutine(destroy());
@@ -78,7 +79,7 @@ public class ShootingEnemyController : MonoBehaviour
     IEnumerator destroy(){
             //play your sound
         yield return new WaitForSeconds(2); 
-        scoreboard.GetComponent<Score>().addScore(1);
+        
         print("ded");
         Destroy(gameObject);
     }
