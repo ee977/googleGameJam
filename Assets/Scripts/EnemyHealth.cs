@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -27,13 +30,14 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             anim.SetBool("Dead", true);
+            gameObject.GetComponent<EnemyController>().enabled = false;
             StartCoroutine(destroy());
         }
     }
         
         IEnumerator destroy(){
             //play your sound
-            yield return new WaitForSeconds(4); 
+            yield return new WaitForSeconds(2); 
             Destroy(gameObject);
         }
 }
