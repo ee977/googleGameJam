@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
     private Transform player;
     [SerializeField]
     private float damage = 5.0f;
+    
+    [SerializeField]private int MAX_HEALTH = 100;
 
     private Animator anim;
     private SpriteRenderer _spriteRenderer;
