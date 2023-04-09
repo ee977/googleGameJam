@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4226776817313029373}
   - component: {fileID: 4226776817313029374}
   - component: {fileID: 1825420066671930318}
-  - component: {fileID: 949105517}
   - component: {fileID: 949105524}
   m_Layer: 0
   m_Name: Enemy_Flyingeye
@@ -168,18 +167,6 @@ MonoBehaviour:
   firerate: 2
   shot: {fileID: 3341944868734841071, guid: f1715c15e4d8429418cd5dfcc1f1239f, type: 3}
   shootingPoint: {fileID: 2356490580556160714}
---- !u!114 &949105517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4226776817313029370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793e979c8f52044dbc7af38307d1ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   health: 100
   damage: 50
 --- !u!58 &949105524

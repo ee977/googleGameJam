@@ -22,30 +22,64 @@ public class ShootingEnemyController : MonoBehaviour
     Transform player;
     [SerializeField]
     Transform shootingPoint;
+    [SerializeField]private int health = 100;
+    [SerializeField]private int damage = 50;
+    GameObject scoreboard;
+
+    private Animator anim;
+    private bool ded = false;
 
     void Start(){
 
         // Set up the player transform reference
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        anim = GetComponent<Animator>();
+        scoreboard = GameObject.Find("/Canvas/score");
         
     }
 
     void FixedUpdate(){
-        
-        if(Vector2.Distance(transform.position, player.position) > stopDistance){
-            transform.position = Vector2.MoveTowards(transform.position , player.position, speed * Time.deltaTime);
-        }else if(Vector2.Distance(transform.position, player.position) < nearDistance){
-            transform.position = Vector2.MoveTowards(transform.position , player.position, -speed * Time.deltaTime);
-        }else if(Vector2.Distance(transform.position, player.position) < stopDistance && Vector2.Distance(transform.position, player.position) > nearDistance){
-            transform.position = this.transform.position;
-        }
+        if(ded == false){
+            if(Vector2.Distance(transform.position, player.position) > stopDistance){
+                transform.position = Vector2.MoveTowards(transform.position , player.position, speed * Time.deltaTime);
+            }else if(Vector2.Distance(transform.position, player.position) < nearDistance){
+                 transform.position = Vector2.MoveTowards(transform.position , player.position, -speed * Time.deltaTime);
+            }else if(Vector2.Distance(transform.position, player.position) < stopDistance && Vector2.Distance(transform.position, player.position) > nearDistance){
+                transform.position = this.transform.position;
+            }
 
-        if(firerate <=0){
-            Instantiate(shot, shootingPoint.position, Quaternion.identity);
-            firerate = shotTime;
-        }else{
-            firerate -= Time.deltaTime;
+            if(firerate <=0  ){
+                Instantiate(shot, shootingPoint.position, Quaternion.identity);
+                firerate = shotTime;
+            }else{
+                firerate -= Time.deltaTime;
+            }
         }
+        
     
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if (other.gameObject.CompareTag("bullet"))
+        {
+            health -= damage;
+        }
+        if (health <= 0)
+        {
+            print("DEDPLS");
+            ded = true;
+            anim.SetBool("Dead", true);
+            gameObject.GetComponent<EnemyController>().enabled = false;
+            StartCoroutine(destroy());
+        }
+    }
+        
+    IEnumerator destroy(){
+            //play your sound
+        yield return new WaitForSeconds(2); 
+        scoreboard.GetComponent<Score>().addScore(1);
+        print("ded");
+        Destroy(gameObject);
     }
 }
