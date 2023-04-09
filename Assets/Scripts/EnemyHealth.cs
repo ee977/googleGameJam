@@ -9,12 +9,14 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]private int health = 100;
     [SerializeField]private int damage = 50;
+    GameObject scoreboard;
 
     private Animator anim;
     
     void Start()
     {
         anim = GetComponent<Animator>();
+        scoreboard = GameObject.Find("/Canvas/score");
     }
 
     
@@ -29,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
         
         if (health <= 0)
         {
+            
             anim.SetBool("Dead", true);
             gameObject.GetComponent<EnemyController>().enabled = false;
             StartCoroutine(destroy());
@@ -38,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
         IEnumerator destroy(){
             //play your sound
             yield return new WaitForSeconds(2); 
+            scoreboard.GetComponent<Score>().addScore(1);
             Destroy(gameObject);
         }
 }
