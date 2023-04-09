@@ -16,9 +16,9 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        print("hasar");
+        
         if (other.gameObject.CompareTag("bullet"))
         {
             health -= damage;
