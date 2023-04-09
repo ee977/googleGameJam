@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6816460760666198976}
   - component: {fileID: -3082354517880385591}
   - component: {fileID: 1465479629743768646}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: fireball-red-tail-big
   m_TagString: bullet
   m_Icon: {fileID: 0}
