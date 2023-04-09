@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour{
     [SerializeField]
     private GameObject enemy;
     [SerializeField]
-    private float spawnRate = 2f;
+    private float spawnRate = 10f;
 
                     // Start is called before the first frame update
     void Start(){
@@ -17,7 +17,10 @@ public class EnemySpawner : MonoBehaviour{
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 6f), 0), Quaternion.identity);
-        StartCoroutine(spawnEnemy(interval, enemy));
+        spawnRate= spawnRate - 3;
+        if(spawnRate <=1){spawnRate = 1;}
+
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-2f, 2), Random.Range(-2f, 2f), 0), Quaternion.identity);
+        StartCoroutine(spawnEnemy(spawnRate, enemy));
     }
 }
