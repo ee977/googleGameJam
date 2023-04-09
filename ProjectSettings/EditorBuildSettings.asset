@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Rumeysa.unity
-    guid: b9f5ba64371afdc4ab0b8011e64c193b
-  - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 48166971fefb8244daf156c24ab1e3c8
+  - enabled: 1
+    path: Assets/Scenes/Rumeysa.unity
+    guid: b9f5ba64371afdc4ab0b8011e64c193b
   m_configObjects: {}
