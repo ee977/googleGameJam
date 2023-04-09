@@ -20854,6 +20854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   text: {fileID: 0}
+  canvas: {fileID: 0}
   karakterKontrol: {fileID: 0}
 --- !u!114 &1988881223
 MonoBehaviour:
@@ -22319,7 +22320,7 @@ PrefabInstance:
     - target: {fileID: 6460522583070415392, guid: e4182e97888db8e46a832017c60fff1d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6460522583355900701, guid: e4182e97888db8e46a832017c60fff1d,
         type: 3}
@@ -22435,6 +22436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460522583614714787, guid: e4182e97888db8e46a832017c60fff1d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4182e97888db8e46a832017c60fff1d, type: 3}
