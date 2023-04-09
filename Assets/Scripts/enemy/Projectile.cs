@@ -69,10 +69,6 @@ public class Projectile : MonoBehaviour
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 5f);
             Destroy(gameObject);
-        }else if (collision.gameObject.tag == "enemy"){
-            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 5f);
-            Destroy(gameObject);
         }
         
     }
