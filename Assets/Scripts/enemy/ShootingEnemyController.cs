@@ -71,7 +71,6 @@ public class ShootingEnemyController : MonoBehaviour
             ded = true;
             scoreboard.GetComponent<Score>().addScore(1);
             anim.SetBool("Dead", true);
-            gameObject.GetComponent<EnemyController>().enabled = false;
             StartCoroutine(destroy());
         }
     }
