@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   player: {fileID: 0}
-  damage: 20
+  damage: 10
   MAX_HEALTH: 100
 --- !u!50 &739465023
 Rigidbody2D:

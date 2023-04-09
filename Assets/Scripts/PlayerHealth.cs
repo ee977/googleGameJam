@@ -28,13 +28,14 @@ public class PlayerHealth : MonoBehaviour
                
             }
     
-            public void Damage(float amount = 10f){
+            public void Damage(float amount = 5f){
                 if(amount < 0){
                     throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
                 }
     
                 this.health -= amount;
                 text.text = "" + health;
+                anim.SetTrigger("hurt");
     
                 if(health <= 0){
                     Die();
