@@ -41,7 +41,9 @@ public class Projectile : MonoBehaviour
         if (other.tag == "Player")
         {
             other.GetComponent<PlayerHealth>().Damage(dmg);
-            
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 5f);
+            Destroy(gameObject);
         }
     }
 
