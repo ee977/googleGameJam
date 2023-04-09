@@ -3,17 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - stage
+  - enemy
+  - bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - bullet
   - Water
   - UI
-  - 
-  - 
-  - 
+  - player
+  - health
+  - bullet_enemy
   - 
   - 
   - 

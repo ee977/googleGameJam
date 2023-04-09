@@ -15,18 +15,24 @@ public class PlayerHealth : MonoBehaviour
             [SerializeField]private TMP_Text text;
             [SerializeField] private GameObject canvas;
             public KarakterKontrol karakterKontrol;
-
+            
+            
             private int MAX_HEALTH = 100;
             
             void Awake()
             {
                 anim = GetComponent<Animator>();
                 text.text = "" + health;
+                
             }
        
             void Update()
             {
-               
+                text.text = "" + health;
+                bool wouldBeOverMaxHealth = health > MAX_HEALTH;
+                if (wouldBeOverMaxHealth){
+                    this.health = MAX_HEALTH;
+                }
             }
     
             public void Damage(float amount = 5f){
@@ -35,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
                 }
     
                 this.health -= amount;
-                text.text = "" + health;
+                
                 anim.SetTrigger("hurt");
     
                 if(health <= 0){
@@ -55,19 +61,17 @@ public class PlayerHealth : MonoBehaviour
                 Time.timeScale = 0;
             }
     
-           // public void Heal(int amount){
-           //     if (amount < 0){
-           //         throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
-           //     }
-            //
-           //     bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
-            //
-           //     if (wouldBeOverMaxHealth){
-           //         this.health = MAX_HEALTH;
-           //     }else{
-           //         this.health += amount;
-           //     }
-           // }
+            public void Heal(int amount){
+                if (amount < 0){
+                    throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
+                }
+           
+                
+           
+                else{
+                    this.health += amount;
+                }
+            }
     
             private void Die()
             {
