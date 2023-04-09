@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("hasar");
-        if (other.CompareTag(""))
+        if (other.CompareTag("bullet"))
         {
             health -= damage;
         }

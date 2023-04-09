@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
                
             }
     
-            public void Damage(float amount){
+            public void Damage(float amount = 10f){
                 if(amount < 0){
                     throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
                 }
