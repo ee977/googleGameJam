@@ -20432,6 +20432,10 @@ PrefabInstance:
       propertyPath: m_EdgeRadius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2140033942, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8853461538655865705, guid: 904d0b8c28276a64c8101ddedd894d57,
         type: 3}
       propertyPath: m_Name
@@ -20849,6 +20853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  text: {fileID: 0}
+  karakterKontrol: {fileID: 0}
 --- !u!114 &1988881223
 MonoBehaviour:
   m_ObjectHideFlags: 0
