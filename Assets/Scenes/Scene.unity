@@ -25801,7 +25801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4226776817313029370, guid: e281f2a6faac63f408302c7bbb0bc3af, type: 3}
-  spawnRate: 10
+  spawnRate: 14
 --- !u!4 &941250583
 Transform:
   m_ObjectHideFlags: 0
@@ -25829,26 +25829,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2038208732}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &949105510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4226776817313029370, guid: e281f2a6faac63f408302c7bbb0bc3af,
-    type: 3}
-  m_PrefabInstance: {fileID: 978408252}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &949105517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949105510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793e979c8f52044dbc7af38307d1ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  damage: 50
 --- !u!1001 &971586942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25929,11 +25909,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy_Flyingeye
-      objectReference: {fileID: 0}
-    - target: {fileID: 4226776817313029370, guid: e281f2a6faac63f408302c7bbb0bc3af,
-        type: 3}
-      propertyPath: m_TagString
-      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4226776817313029375, guid: e281f2a6faac63f408302c7bbb0bc3af,
         type: 3}
@@ -29176,46 +29151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 794697841, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Size.x
-      value: 0.9493611
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697841, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Size.y
-      value: 1.3596563
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697841, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697841, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.012869
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697841, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.6511769
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697841, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_EdgeRadius
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697842, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Size.x
-      value: 0.4908979
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697842, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Size.y
-      value: 1.2938452
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697842, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.02330935
-      objectReference: {fileID: 0}
-    - target: {fileID: 794697842, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.65068436
-      objectReference: {fileID: 0}
+    - target: {fileID: 1988881207, guid: 904d0b8c28276a64c8101ddedd894d57, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1131989035}
     - target: {fileID: 8853461538655865705, guid: 904d0b8c28276a64c8101ddedd894d57,
         type: 3}
       propertyPath: m_Name
@@ -29752,61 +29691,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1280366820}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1988881191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8853461538655865705, guid: 904d0b8c28276a64c8101ddedd894d57,
-    type: 3}
-  m_PrefabInstance: {fileID: 1832263798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1988881198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8853461538655865707, guid: 904d0b8c28276a64c8101ddedd894d57,
     type: 3}
   m_PrefabInstance: {fileID: 1832263798}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1988881207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988881191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6964c3c8039aa4c47a297fbb3be23017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  text: {fileID: 1131989035}
-  karakterKontrol: {fileID: 1988881224}
---- !u!114 &1988881223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988881191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7431900d2398649acd587983023879, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 2140033942}
-  bulletPrefab: {fileID: 1649892853185631275, guid: 550b4417c6d584c40be93574b414a46b,
-    type: 3}
-  bulletForce: 20
---- !u!114 &1988881224 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1988881199, guid: 904d0b8c28276a64c8101ddedd894d57,
-    type: 3}
-  m_PrefabInstance: {fileID: 1832263798}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988881191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b198d3c5fc26b844b99e139446fd40f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1993785046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31697,7 +31587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 739465011}
-  spawnRate: 4
+  spawnRate: 8
 --- !u!4 &2094197152
 Transform:
   m_ObjectHideFlags: 0
@@ -31800,37 +31690,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1043229927}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2140033941
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2140033942}
-  m_Layer: 0
-  m_Name: firepoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2140033942
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140033941}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.351, y: 0.951, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1988881198}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2147172948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31907,10 +31766,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 739465016, guid: 4d412a44d9e5e214da592a04ca7258ff, type: 3}
-      propertyPath: damage
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 739465016, guid: 4d412a44d9e5e214da592a04ca7258ff, type: 3}
       propertyPath: player
       value: 
