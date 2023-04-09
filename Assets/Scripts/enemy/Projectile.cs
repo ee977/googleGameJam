@@ -9,30 +9,51 @@ public class Projectile : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
+    private Rigidbody2D rb;
 
     [SerializeField]
     private float dmg = 10;
+
+    [SerializeField]public GameObject hitEffect;
     
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector2(player.position.x, player.position.y);
+        rb= GetComponent<Rigidbody2D>();
+
+        Vector3 direction = player.transform.position - transform.position;
+
+        
+        
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * speed;
+        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0,0, rot + 180);
+       
+        
+        //transform.Rotate(0, 0, Mathf.Tan((transform.position.x-target.x)/(transform.position.y-target.y)));
+        //transform.Rotate(0,0,Mathf.Tan(Mathf.Abs (player.position.y - transform.position.y)/Mathf.Abs( player.position.x - transform.position.x)));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         // If the enemy collides with the player, apply damage
         if (other.tag == "Player"){
             other.GetComponent<PlayerHealth>().Damage(dmg);
+        }else if(other.tag == "eye"){
+
+        }else{
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 5f);
+            Destroy(gameObject);
         }
 
         Destroy(gameObject);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        
     }
 }

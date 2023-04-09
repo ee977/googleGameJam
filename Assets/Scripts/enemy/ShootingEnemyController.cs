@@ -41,7 +41,7 @@ public class ShootingEnemyController : MonoBehaviour
         }
 
         if(firerate <=0){
-            Instantiate(shot, shootingPoint.position, shootingPoint.rotation);
+            Instantiate(shot, shootingPoint.position, Quaternion.identity);
             firerate = shotTime;
         }else{
             firerate -= Time.deltaTime;

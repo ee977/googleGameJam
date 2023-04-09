@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3341944868734841070}
   - component: {fileID: 1501596183}
   - component: {fileID: 8992998802531188586}
+  - component: {fileID: 4077982769150038435}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -120,6 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  dmg: 10
+  hitEffect: {fileID: 8480894964725777738, guid: 5a683b1890ecccd479b511b8f0b10637,
+    type: 3}
 --- !u!70 &8992998802531188586
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -136,3 +140,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0000005861754, y: 0.006171396}
   m_Size: {x: 0.3000016, y: 0.1741073}
   m_Direction: 1
+--- !u!50 &4077982769150038435
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3341944868734841071}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
