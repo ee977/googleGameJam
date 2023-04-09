@@ -440,8 +440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 76.4}
-  m_SizeDelta: {x: 298.9799, y: 79.6356}
+  m_AnchoredPosition: {x: -0.3495, y: 79.1573}
+  m_SizeDelta: {x: 720.842, y: 74.121}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62603183
 MonoBehaviour:
@@ -476,7 +476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Game Name \n"
+  m_Text: 'Witch   Academia '
 --- !u!222 &62603184
 CanvasRenderer:
   m_ObjectHideFlags: 0
