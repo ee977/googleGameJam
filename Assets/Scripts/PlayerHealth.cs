@@ -1,4 +1,4 @@
-using System.Collections;
+  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +10,7 @@ using Input = UnityEngine.Windows.Input;
 
 public class PlayerHealth : MonoBehaviour
         {
-            [SerializeField] private float health = 100;
+            [SerializeField] public float health = 100;
             private Animator anim;
             [SerializeField]private TMP_Text text;
             [SerializeField] private GameObject canvas;
