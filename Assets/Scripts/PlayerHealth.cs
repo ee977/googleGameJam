@@ -41,7 +41,14 @@ public class PlayerHealth : MonoBehaviour
                     text.text = "0";
                     karakterKontrol.enabled = false;
                     gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+                    Invoke(nameof(stopAnim), 1.5f);
+                    
                 }
+            }
+
+            void stopAnim()
+            {
+                anim.enabled = false;
             }
     
            // public void Heal(int amount){
