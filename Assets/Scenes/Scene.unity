@@ -282,6 +282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: healthpowerup (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4435037902002228173, guid: f65f7a555c981ba4794523140ede9376,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65f7a555c981ba4794523140ede9376, type: 3}
 --- !u!4 &50379906 stripped
@@ -370,6 +375,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -1138,6 +1154,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -1901,6 +1928,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -7906,6 +7944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: healthpowerup (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4435037902002228173, guid: f65f7a555c981ba4794523140ede9376,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65f7a555c981ba4794523140ede9376, type: 3}
 --- !u!4 &633038873 stripped
@@ -25617,6 +25660,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -26565,6 +26619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: healthpowerup (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4435037902002228173, guid: f65f7a555c981ba4794523140ede9376,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65f7a555c981ba4794523140ede9376, type: 3}
 --- !u!4 &935144945 stripped
@@ -28019,6 +28078,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -29029,6 +29099,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -29829,6 +29910,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -30523,6 +30615,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
+    - target: {fileID: 6297924620721421688, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
+        type: 3}
+      propertyPath: powerupEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3ec11b8f162724cb7817539d3e7cc2,
+        type: 2}
     - target: {fileID: 6297924620721421689, guid: d4f29d53cf477ae42bb3a000ea6a04c5,
         type: 3}
       propertyPath: m_Name
@@ -32852,6 +32955,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: healthpowerup (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4435037902002228173, guid: f65f7a555c981ba4794523140ede9376,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2009758831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65f7a555c981ba4794523140ede9376, type: 3}
 --- !u!4 &2124114474 stripped
